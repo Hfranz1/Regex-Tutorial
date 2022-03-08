@@ -1,10 +1,17 @@
 # Regex-Tutorial
-
-Introductory paragraph (replace this with your text)
+This is a guid to Regex, through this we will be looking into how these expressions work. While regex can seem overwhelming, just like with any programming, it can be broken down into smaller easier to understand parts.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regex is a string of text that allows a user to create seach for patterns that match, locate text, and manage.
+<p>
+Example: expression used to match e-mails
+ </p>
+ 
+```
+/[\w._%+-]+@[\w.-]+\.[a-zA-z]{2,4}/
+```
+
 
 ## Table of Contents
 
@@ -35,9 +42,14 @@ Anchors are characters within a regular expression that allow for matching a pos
  - ```$```-The dollar sign anchor matches the end text
 
  example:
+ 
  ```
-
+^Hello          matches a string with `Hello`
+World$          matches any string `World`
+^Hello World$   matches the exact srting
+goodbye         matches the exact string
  ```
+ 
 ### Quantifiers
 Indicates the number of characters or expressions to match.
 
