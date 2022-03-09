@@ -92,7 +92,12 @@ Flags are optional parameters that can be added to plain expressions to make it 
  - ```m```  - Multi-line, when paired with (^$) will match a start and end line, rather than the whole string
  - ```g```  - Global, only returns the first match, after restarting it makes the expression search for all 
 ### Character Escapes
+Escaped Characters are regular expressions that use ``` \ ``` that go in front of character classes.
 
+- ``` \d ``` matches a single digits 0-9
+- ``` \s ``` matches a single whitespace character
+- ``` \U ``` matches a single character that is not uppercase
+- ``` \z ``` matches a character at the end of a string before the break
 
 ### Bracket Expressions
 Bracket Expressions are characters that are enclosed by brackets allowing users to match any character that is within the brackets. 
