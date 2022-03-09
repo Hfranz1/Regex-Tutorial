@@ -23,6 +23,7 @@ Example: expression used to match e-mails
 - [The OR Operator](#the-or-operator)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
+- [Links](#link)
 
 ## Regex Components
 - Mannaging the Analysis Scope
@@ -74,7 +75,16 @@ a(bc){5,9}   matches a string that had a followed by 5 up to 9 of the sequence b
 
 ### Character Classes
 Character classes differentiates between types of characters, such as letters and numerical digits.
+
+- /d matches a single character any digit 0-9
+- . matches any character
+- /s matches a whitespace character
+- /w matches a word character that is a-z
 ### The OR Operator
+
+OR Operators matches a choice of expressions if you put the character representing the operator between any two characters in a regular expression, the result matches the union of strings that those two characters match.
+- ``` | ```
+- ``` [] ```
 
 ### Flags
 Flags are optional parameters that can be added to plain expressions to make it search in different ways. Each flag is followed by a alphabetic character.
@@ -83,13 +93,17 @@ Flags are optional parameters that can be added to plain expressions to make it 
  - ```g```  - Global, only returns the first match, after restarting it makes the expression search for all 
 ### Character Escapes
 
-### Grouping Constructs
 
 ### Bracket Expressions
+Bracket Expressions are characters that are enclosed by brackets allowing users to match any character that is within the brackets. 
+- [] any character within the brackets
+- []% any character in the brackets that appears before the %
+- [^] any string that does not have a letter that is within the brackets
 
 ## Author
-Hannah Franz
+I am a current student at the University of Denver in their full-stack coding bootcamp. In my free time I enjoy exploring colorado and spending time with my family. I've worked 4 years in the medical feild specializing in eating disorders.
 
 ## Links
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+GitHub: https://github.com/Hfranz1
+GitHub Repo: https://github.com/Hfranz1/Regex-Tutorial
